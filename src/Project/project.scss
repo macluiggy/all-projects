@@ -1,0 +1,29 @@
+.project_container {
+    border: solid blue;
+    padding: 1em;
+    text-align: left;
+    position: relative;
+    .img_container {
+        height: 111px;
+        overflow: hidden;
+        border: solid;
+        width: 90%;
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
+    }
+    .bottom_container {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        bottom: 0px;
+        .buttons_container {
+            display: flex;
+            flex-direction: column;
+        }
+        .icons {
+
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.main_container {
+    .projects {
+        border: solid red;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 300px);
+        justify-content: center;
+        grid-gap: 1em;
+    }
+}

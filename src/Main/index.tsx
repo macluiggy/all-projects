@@ -1,34 +1,22 @@
 import projects from '../data/projects'
+import './main.scss'
+import Project from '../Project'
 console.log(projects)
 const Main = () => {
 	return (
-		<div>
+		<div className="main_container">
 			<div className="technologies">hola</div>
 			<div className='projects'>
-				{projects.map((project: Project) => <Project {...project} />)}
+				{projects.map((project: Projects) => <Project {...project} />)}
 			</div>
 		</div>
 	);
 };
-interface Project {
+interface Projects {
 	title: string;
 	img: string;
 	description: string;
 	technologies: string[];
 }
-const Project = ({ title, img, description, technologies}: Project) => {
-	return (
-		<div className='project_container'>
-			<h2>{title}</h2>
-			<figure>
-				<img src={'img'} alt="" />
-			</figure>
-			<p>{description}</p>
-			<div>
-				<button>Source code ></button>
-				<button>Project live</button>
-			</div>
-		</div>
-	)
-}
+
 export default Main;
