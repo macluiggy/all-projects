@@ -1,4 +1,5 @@
 {
+  "homepage": "https://macluiggy.github.io/all-projects",
   "name": "javascript-calculator",
   "version": "0.1.0",
   "private": true,
@@ -18,6 +19,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "pnpm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -42,6 +45,8 @@
     ]
   },
   "devDependencies": {
-    "prettier": "^2.4.1"
+    "gh-pages": "^3.2.3",
+    "prettier": "^2.4.1",
+    "sass": "^1.43.4"
   }
 }
