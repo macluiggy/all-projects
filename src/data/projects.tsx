@@ -13,7 +13,7 @@ const data: Data = [
 		title: 'Full Stack Movie Reviews App',
 		img: 'https://macluiggy.github.io/images/insure.png',
 		description: 'This MERN app fetches movies from a Mongo database, you can also login and post a review, update delete the reviews you have made in the database.',
-		technologies: ['vscode-icons:file-type-mongo', 'simple-icons:express', "logos:react", "vscode-icons:file-type-node", ],
+		technologies: ['vscode-icons:file-type-mongo', 'simple-icons:express', "logos:react", "vscode-icons:file-type-node", "vscode-icons:file-type-node",],
 		"source_code": '',
 		project_live: '',
 		
