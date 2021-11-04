@@ -6,8 +6,9 @@ interface Projects {
 	technologies: string[];
 	"source_code": string;
 	project_live: string;
+	icon_name: string[];
 }
-const Project = ({ title, img, description, technologies, project_live, source_code}: Projects) => {
+const Project = ({ title, img, description, technologies, project_live, source_code, icon_name}: Projects) => {
 	return (
 		<div className='project_container'>
 			<h2>{title}</h2>
@@ -17,12 +18,12 @@ const Project = ({ title, img, description, technologies, project_live, source_c
 			<p>{description}</p>
 			<div className='bottom_container'>
 				<div className='buttons_container'>
-					<a href={source_code}>Source code &gt;</a>
-					<a href={project_live}>Project live</a>
+					<a href={source_code} className='source_code'>Source code &gt;</a>
+					<a href={project_live} className='project_live'>Project live</a>
 				</div>
 				<figure className='icons'>
-					{technologies.map(icon => {
-						return <span className="iconify" data-icon={icon} data-inline="false"></span>
+					{icon_name.map((icon, i) => {
+						return <span title={technologies[i]} className="iconify" data-icon={icon} data-inline="false"></span>
 					})}
 				</figure>
 			</div>

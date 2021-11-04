@@ -16,9 +16,10 @@ interface Projects {
 	title: string;
 	img: string;
 	description: string;
-	technologies: string[];
+	icon_name: string[];
 	"source_code": string;
 	project_live: string;
+	technologies: string[];
 }
 
 export default Main;
