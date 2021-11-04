@@ -17,6 +17,8 @@ interface Projects {
 	img: string;
 	description: string;
 	technologies: string[];
+	"source_code": string;
+	project_live: string;
 }
 
 export default Main;
