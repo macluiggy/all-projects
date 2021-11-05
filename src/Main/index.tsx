@@ -2,7 +2,7 @@ import projectsInitial from '../data/projects'
 import techs, {tech_icons} from '../data/technologies'
 import './main.scss'
 import Project from '../Project'
-import { FunctionComponent, FC, useState, useEffect, MouseEvent } from 'react'
+import { FunctionComponent, FC, useState, useEffect, MouseEvent, ChangeEvent } from 'react'
 //import technologies from '../data/technologies'
 //console.log(projects)
 interface Projects {
@@ -19,21 +19,15 @@ const Main:FunctionComponent = () => {
 	const [projects, setProjects] = useState(projectsInitial)
 	const [currentTech, setCurrentTech] = useState('null')
 	
-	console.log(currentTech)
+	const fn = (e: MouseEvent<HTMLInputElement>) => {
+		const target = e.target
+		console.log(target);
+		
+	}
 	return (
 		<div className="main_container">
 			<div className="technologies">
-			{
-				techs.map((tech: string, i) => {
-					return (
-						<>
-						<input type="button" value={tech} onClick={}/>
-						<span className="iconify" data-icon={tech_icons[i]} data-inline="false"></span>
-							{tech}
-						</>
-					)
-				})
-			}
+				<Technologies fn={fn} />
 			</div>
 			<div className='projects'>
 				{projects.map((project: Projects) => <Project {...project} />)}
@@ -42,16 +36,17 @@ const Main:FunctionComponent = () => {
 	);
 };
 
-const Technologies: FC<any> = (onUpdateCurrentTech) => {
+const Technologies: FC<any> = ({fn}) => {
 	return (
 		<div>
 			{
 				techs.map((tech: string, i) => {
 					return (
-						<button type='button' value={tech} onClick={onUpdateCurrentTech}>
+						<div>
+							<input type="button" value={tech} onClick={fn}/>
 							<span className="iconify" data-icon={tech_icons[i]} data-inline="false"></span>
-							{tech}
-						</button>
+								{tech}
+						</div>
 					)
 				})
 			}
