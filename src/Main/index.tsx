@@ -26,12 +26,11 @@ const Main:FunctionComponent = () => {
 			{
 				techs.map((tech: string, i) => {
 					return (
-						<button type='button' value={tech} onClick={(e: MouseEvent) => {
-							console.log('djdjdj')
-						}}>
-							<span className="iconify" data-icon={tech_icons[i]} data-inline="false"></span>
+						<>
+						<input type="button" value={tech} onClick={}/>
+						<span className="iconify" data-icon={tech_icons[i]} data-inline="false"></span>
 							{tech}
-						</button>
+						</>
 					)
 				})
 			}
