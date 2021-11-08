@@ -11,6 +11,15 @@ type Data = Project[] // Array<Project>
 
 const data: Data = [
 	{
+		title: 'Timestamp Microservice',
+		img: 'https://macluiggy.github.io/images/timestamp-microservice.png',
+		description: 'A simple timestamp microservice, it was built as an introduction to Node.js',
+		icon_name: ['logos:typescript-icon',"vscode-icons:file-type-node", 'simple-icons:express', 'vscode-icons:file-type-html', 'vscode-icons:file-type-css'],
+		"source_code": 'https://github.com/macluiggy/boilerplate-project-timestamp',
+		project_live: 'http://ec2-3-17-186-86.us-east-2.compute.amazonaws.com:3000/',
+		technologies: ['TypeScript', 'Node.js', 'Express', 'HTML', 'CSS'],
+	},
+	{
 		title: 'Full Stack Movie Reviews App',
 		img: 'https://macluiggy.github.io/images/movie-reviews.png',
 		description: 'This MERN app fetches movies from a Mongo database, you can also login and post a review, update delete the reviews you have made in the database.',

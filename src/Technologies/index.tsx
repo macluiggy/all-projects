@@ -1,9 +1,12 @@
 import techs, {tech_icons} from '../data/technologies'
 import { FC } from 'react';
+import './technologies.scss'
 
 const Technologies: FC<any> = ({fn}) => {
 	return (
-		<div>
+		<div className="technologies_buttons">
+            <h2>ALL PROJECTS</h2>
+            <p>Here you can find all my finished projects. Click on a technology to see only those projects where it has been used.</p>
 			{
 				techs.map((tech: string, i) => {
 					return (

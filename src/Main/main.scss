@@ -1,19 +1,12 @@
-@import '../utilities/mixins';
 
 .main_container {
+    //border: solid;
+    width: 80%;
+    margin: auto;
     .technologies {
         //border: solid;
         padding: 4em;
-        div {
-            border: solid red;
-            button {
-                //border: solid;
-                background-color: transparent;
-                //border: none;
-                padding: 0.7em;
-                margin: 0.5em;
-            }
-        }
+        
     }
     .projects {
         //border: solid red;

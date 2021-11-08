@@ -6,21 +6,21 @@ function App() {
   return (
     <div className="App">
       <header id="header">
-        <a href="index.html" className="title">
+        <a href="https://macluiggy.github.io" className="title">
           Luiggy Macias Portfolio
         </a>
         <nav>
           <ul>
             <li>
-              <a href="index.html">Home</a>
+              <a href="https://macluiggy.github.io">Home</a>
             </li>
             <li>
-              <a href="generic.html" className="active">
+              <a href="/" className="active">
                 All Projects
               </a>
             </li>
             <li>
-              <a href="resume.pdf">Resume</a>
+              <a href="https://macluiggy.github.io/resume.pdf">Resume</a>
             </li>
           </ul>
         </nav>

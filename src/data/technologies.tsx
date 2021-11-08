@@ -1,5 +1,6 @@
 type Tech = Array<string>
 let tech: Tech = [
+    'TypeScript',
     'JavaScript', 
     'Sass', 
     'React',
@@ -14,6 +15,7 @@ let tech: Tech = [
 //['logos:javascript', 'logos:sass', "logos:react", "logos:redux"]
 type Tech_Icons = string[] 
 export let tech_icons: Tech_Icons = [
+    'logos:typescript-icon',
     'logos:javascript',
     'logos:sass',
     "logos:react",
