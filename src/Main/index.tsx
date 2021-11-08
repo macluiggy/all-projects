@@ -17,14 +17,36 @@ interface Projects {
 interface UpdateCurrentTech {target: { value: string }}
 const Main:FunctionComponent = () => {
 	const [projects, setProjects] = useState(projectsInitial)
-	const [currentTech, setCurrentTech] = useState('null')
+	const [currentTech, setCurrentTech] = useState('')
 	
 	const fn = (e: React.MouseEvent<HTMLInputElement, globalThis.MouseEvent>) => {
 		//
 		const target = e.target as HTMLButtonElement;
-		console.log(target.value);
+		//console.log(target.value);
+		setCurrentTech(target.value)
+		//console.log(currentTech);
 		
 	}
+	const updateProjects = () => {
+		let newProjects = projects.filter((project) => {
+			//console.log(project.technologies.join(' ').toLocaleLowerCase())
+			return project
+				.technologies
+				.join(' ')
+				.toLocaleLowerCase()
+				.includes(currentTech.toLocaleLowerCase())
+		})
+		//console.log('holaaa');
+		
+		//console.log(newProjects);
+		setProjects(newProjects)
+	}
+	useEffect(() => {
+		if (!currentTech) {
+			return setProjects(projectsInitial)
+		}
+		updateProjects()
+	}, [currentTech])
 	return (
 		<div className="main_container">
 			<div className="technologies">
@@ -43,7 +65,7 @@ const Technologies: FC<any> = ({fn}) => {
 			{
 				techs.map((tech: string, i) => {
 					return (
-						<button type="button" value={tech} onClick={fn}>
+						<button key={i} type="button" value={tech} onClick={fn}>
 							<span className="iconify" data-icon={tech_icons[i]} data-inline="false"></span>
 								{tech}
 						</button>

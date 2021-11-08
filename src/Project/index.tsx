@@ -10,7 +10,7 @@ interface Projects {
 }
 const Project = ({ title, img, description, technologies, project_live, source_code, icon_name}: Projects) => {
 	return (
-		<div className='project_container'>
+		<div className='project_container' key={title}>
 			<h2>{title}</h2>
 			<figure className='img_container'>
 				<img src={img} alt="" />
