@@ -1,4 +1,20 @@
+@import '../utilities/mixins';
+
 .main_container {
+    .technologies {
+        //border: solid;
+        padding: 4em;
+        div {
+            border: solid red;
+            button {
+                //border: solid;
+                background-color: transparent;
+                //border: none;
+                padding: 0.7em;
+                margin: 0.5em;
+            }
+        }
+    }
     .projects {
         //border: solid red;
         display: grid;
@@ -6,9 +22,6 @@
         justify-content: center;
         grid-gap: 1.7em;
         margin-bottom: 5em;
-
-        border: solid red;
-        font: optional;
         
     }
 }

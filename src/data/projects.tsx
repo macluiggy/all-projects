@@ -89,7 +89,7 @@ const data: Data = [
 		icon_name: ['vscode-icons:file-type-html', 'vscode-icons:file-type-css', "logos:javascript"],
 		"source_code": 'https://github.com/macluiggy/blogrLandingPage',
 		project_live: 'https://macluiggy.github.io/blogrLandingPage',
-		technologies: ['JavaScript', 'Sass', 'React'],
+		technologies: ['HTML', 'CSS', 'JavaScript'],
 	},
 	{
 		title: 'Launch Countdown TImer',

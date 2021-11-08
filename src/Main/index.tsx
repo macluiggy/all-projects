@@ -1,8 +1,9 @@
 import projectsInitial from '../data/projects'
-import techs, {tech_icons} from '../data/technologies'
+//import techs, {tech_icons} from '../data/technologies'
 import './main.scss'
 import Project from '../Project'
-import React, { FunctionComponent, FC, useState, useEffect, MouseEvent, ChangeEvent } from 'react'
+import React, { FunctionComponent, useState, useEffect } from 'react'
+import Technologies from '../Technologies/'
 //import technologies from '../data/technologies'
 //console.log(projects)
 interface Projects {
@@ -14,7 +15,7 @@ interface Projects {
 	project_live: string;
 	technologies: string[];
 }
-interface UpdateCurrentTech {target: { value: string }}
+//interface UpdateCurrentTech {target: { value: string }}
 const Main:FunctionComponent = () => {
 	const [projects, setProjects] = useState(projectsInitial)
 	const [currentTech, setCurrentTech] = useState('')
@@ -28,7 +29,7 @@ const Main:FunctionComponent = () => {
 		
 	}
 	const updateProjects = () => {
-		let newProjects = projects.filter((project) => {
+		let newProjects = projectsInitial.filter((project) => {
 			//console.log(project.technologies.join(' ').toLocaleLowerCase())
 			return project
 				.technologies
@@ -42,7 +43,7 @@ const Main:FunctionComponent = () => {
 		setProjects(newProjects)
 	}
 	useEffect(() => {
-		if (!currentTech) {
+		if (!currentTech || currentTech === 'All') {
 			return setProjects(projectsInitial)
 		}
 		updateProjects()
@@ -53,29 +54,12 @@ const Main:FunctionComponent = () => {
 				<Technologies fn={fn} />
 			</div>
 			<div className='projects'>
-				{projects.map((project: Projects) => <Project {...project} />)}
+				{projects.map((project: Projects) => <Project key={project.title} {...project} />)}
 			</div>
 		</div>
 	);
 };
 
-const Technologies: FC<any> = ({fn}) => {
-	return (
-		<div>
-			{
-				techs.map((tech: string, i) => {
-					return (
-						<button key={i} type="button" value={tech} onClick={fn}>
-							<span className="iconify" data-icon={tech_icons[i]} data-inline="false"></span>
-								{tech}
-						</button>
-					)
-				})
-			}
-		</div>
-
-	)
-}
 
 
 export default Main;
