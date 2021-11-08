@@ -2,7 +2,7 @@ import projectsInitial from '../data/projects'
 import techs, {tech_icons} from '../data/technologies'
 import './main.scss'
 import Project from '../Project'
-import { FunctionComponent, FC, useState, useEffect, MouseEvent, ChangeEvent } from 'react'
+import React, { FunctionComponent, FC, useState, useEffect, MouseEvent, ChangeEvent } from 'react'
 //import technologies from '../data/technologies'
 //console.log(projects)
 interface Projects {
@@ -14,14 +14,15 @@ interface Projects {
 	project_live: string;
 	technologies: string[];
 }
-interface UpdateCurrentTech {target: { value: string}}
+interface UpdateCurrentTech {target: { value: string }}
 const Main:FunctionComponent = () => {
 	const [projects, setProjects] = useState(projectsInitial)
 	const [currentTech, setCurrentTech] = useState('null')
 	
-	const fn = (e: MouseEvent<HTMLInputElement>) => {
-		const target = e.target
-		console.log(target);
+	const fn = (e: React.MouseEvent<HTMLInputElement, globalThis.MouseEvent>) => {
+		//
+		const target = e.target as HTMLButtonElement;
+		console.log(target.value);
 		
 	}
 	return (
@@ -42,11 +43,10 @@ const Technologies: FC<any> = ({fn}) => {
 			{
 				techs.map((tech: string, i) => {
 					return (
-						<div>
-							<input type="button" value={tech} onClick={fn}/>
+						<button type="button" value={tech} onClick={fn}>
 							<span className="iconify" data-icon={tech_icons[i]} data-inline="false"></span>
 								{tech}
-						</div>
+						</button>
 					)
 				})
 			}
