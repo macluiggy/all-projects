@@ -49,7 +49,7 @@ const data: Data = [
 	{
 		title: 'Simple Markdown Previewer',
 		img: 'https://macluiggy.github.io/images/markdown-previewer.png',
-		description: 'Simple Markdown Previewer icontains a textarea for markdown input and a preview tab where the converted text appears.',
+		description: 'Simple Markdown Previewer it contains a textarea for markdown input and a preview tab where the converted text appears.',
 		icon_name: ['logos:javascript', 'logos:sass', "logos:react", "logos:redux"],
 		"source_code": 'https://github.com/macluiggy/markdown-editor',
 		project_live: 'https://markdown-previewer-free-code-camp.netlify.app/',

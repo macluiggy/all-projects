@@ -1,15 +1,17 @@
 
 .main_container {
     //border: solid;
-    width: 80%;
+    //width: 80%;
     margin: auto;
     .technologies {
         //border: solid;
-        padding: 4em;
+        padding: 3em 0em;
         
     }
     .projects {
         //border: solid red;
+        width: 80%;
+        margin: auto;
         display: grid;
         grid-template-columns: repeat(auto-fit, 300px);
         justify-content: center;
