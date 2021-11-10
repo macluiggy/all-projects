@@ -11,6 +11,15 @@ type Data = Project[] // Array<Project>
 
 const data: Data = [
 	{
+		title: 'Request Header Parser Microservice',
+		img: 'https://macluiggy.github.io/images/request-header-parser-microservice.png',
+		description: 'This is a microservice that makes a request and it returns a JSON object containing information about your IP, preferred language and software',
+		icon_name: ['logos:typescript-icon',"vscode-icons:file-type-node", 'simple-icons:express', 'vscode-icons:file-type-html', 'vscode-icons:file-type-css'],
+		"source_code": 'https://github.com/macluiggy/boilerplate-project-headerparser',
+		project_live: 'https://boilerplate-project-headerparser-macluiggy.vercel.app/',
+		technologies: ['TypeScript', 'Node.js', 'Express', 'HTML', 'CSS'],
+	},
+	{
 		title: 'Timestamp Microservice',
 		img: 'https://macluiggy.github.io/images/timestamp-microservice.png',
 		description: 'A simple timestamp microservice, it was built as an introduction to Node.js',
