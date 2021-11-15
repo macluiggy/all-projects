@@ -25,7 +25,7 @@ const data: Data = [
 		description: 'A simple timestamp microservice, it was built as an introduction to Node.js',
 		icon_name: ['logos:typescript-icon',"vscode-icons:file-type-node", 'simple-icons:express', 'vscode-icons:file-type-html', 'vscode-icons:file-type-css'],
 		"source_code": 'https://github.com/macluiggy/boilerplate-project-timestamp',
-		project_live: 'http://ec2-3-17-186-86.us-east-2.compute.amazonaws.com:3000/',
+		project_live: 'http://boilerplate-project-timestamp-three.vercel.app/',
 		technologies: ['TypeScript', 'Node.js', 'Express', 'HTML', 'CSS'],
 	},
 	{
