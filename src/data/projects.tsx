@@ -11,6 +11,15 @@ type Data = Project[] // Array<Project>
 
 const data: Data = [
 	{
+		title: 'URL Shortener Microservice',
+		img: 'https://macluiggy.github.io/images/url-shortener.png',
+		description: 'An URL shortener that allows to reduce long links, just paste the long URL and click Shorten.',
+		icon_name: ['logos:typescript-icon',"vscode-icons:file-type-node", 'simple-icons:express', 'vscode-icons:file-type-mongo', 'vscode-icons:file-type-html', 'vscode-icons:file-type-css'],
+		"source_code": 'https://github.com/macluiggy/-boilerplate-project-urlshortener',
+		project_live: 'http://boilerplate-project-urlshortener-six.vercel.app/',
+		technologies: ['TypeScript', 'Node.js', 'Express', 'MongoDB', 'HTML', 'CSS'],
+	},
+	{
 		title: 'Request Header Parser Microservice',
 		img: 'https://macluiggy.github.io/images/request-header-parser-microservice.png',
 		description: 'This is a microservice that makes a request and it returns a JSON object containing information about your IP, preferred language and software',
@@ -25,7 +34,7 @@ const data: Data = [
 		description: 'A simple timestamp microservice, it was built as an introduction to Node.js',
 		icon_name: ['logos:typescript-icon',"vscode-icons:file-type-node", 'simple-icons:express', 'vscode-icons:file-type-html', 'vscode-icons:file-type-css'],
 		"source_code": 'https://github.com/macluiggy/boilerplate-project-timestamp',
-		project_live: 'http://ec2-3-17-186-86.us-east-2.compute.amazonaws.com:3000/',
+		project_live: 'https://boilerplate-project-timestamp-fcc-macluiggy.vercel.app/',
 		technologies: ['TypeScript', 'Node.js', 'Express', 'HTML', 'CSS'],
 	},
 	{
