@@ -20,7 +20,7 @@ function App() {
               </a>
             </li>
             <li>
-              <a href="https://macluiggy.github.io/resume.pdf">Resume</a>
+              <a href="https://macluiggy.github.io/resume-builder/">Resume</a>
             </li>
           </ul>
         </nav>

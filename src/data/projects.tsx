@@ -48,7 +48,7 @@ const data: Data = [
     ],
     source_code:
       "https://github.com/macluiggy/boilerplate-project-exercisetracker",
-    project_live: "https://boilerplate-exercice-tracker.herokuapp.com/",
+    project_live: "https://boilerplate-project-exercisetracker-ten.vercel.app/",
     technologies: ["TypeScript", "Node.js", "Express", "HTML", "CSS"],
   },
   {
