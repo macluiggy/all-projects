@@ -12,6 +12,7 @@ let tech: Tech = [
   "Node.js",
   "PostgreSQL",
   "Webpack",
+  "Next.js",
   "All",
 ];
 //['logos:javascript', 'logos:sass', "logos:react", "logos:redux"]
@@ -29,6 +30,7 @@ export let tech_icons: Tech_Icons = [
   "vscode-icons:file-type-node",
   "logos:postgresql",
   "logos:webpack",
+  "cib:next-js",
   "fluent:arrow-repeat-all-16-filled",
 ];
 export default tech;

@@ -11,6 +11,32 @@ type Data = Project[]; // Array<Project>
 
 const data: Data = [
   {
+    title: "Full Stack User Registration",
+    img: "https://macluiggy.github.io/images/mern-skeleton.png",
+    description:
+      "Full Stack user registration and login page, this app uses jsonwebtoken to authenticate users and store user data in a database. You can see an user profile and edit it if you are logged in.",
+    icon_name: [
+      "logos:typescript-icon",
+      "vscode-icons:file-type-node",
+      "simple-icons:express",
+      "vscode-icons:file-type-mongo",
+      "logos:webpack",
+      "logos:react",
+      "cib:next-js",
+    ],
+    source_code: "https://github.com/macluiggy/mern-skeleton-next.js",
+    project_live: "https://mern-skeleton-next-js.vercel.app/",
+    technologies: [
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Webpack",
+      "React",
+      "Next.js",
+    ],
+  },
+  {
     title: "Full Stack PERN Tasks",
     img: "https://macluiggy.github.io/images/tasks-pern.png",
     description:
